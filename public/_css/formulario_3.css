@@ -1,0 +1,46 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+#title{
+    margin-left: 10px; 
+}
+.container{
+    margin-top:-10px;
+
+    height: 3.5em;
+}
+.select{
+    -webkit-app-region: drag;
+}
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+*{
+    -webkit-user-select: none;
+    
+}
+.sub-div{
+    width:100%;
+    height:100%
+}
+input{
+    width:80px;
+}
+#btn-c{
+    margin-top:15px;
+    margin-bottom:20px;
+    margin-right: 7px;
+}
+#btn-p{
+    margin-top:15px;
+    margin-bottom:20px;
+    margin-left:81%;
+}
+.cont{
+    width: 1000px;
+    margin:0 auto;
+}

@@ -1,0 +1,39 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    width: 270px;
+    height: 100px;
+    background-color: #FFF;
+}
+.barra{
+    margin-top: -10px;
+    width: 90%;
+    text-align: center;
+    height: 40px;
+    float: left;
+    border-bottom: 1px solid gray;
+    -webkit-app-region: drag;
+}
+.fecha{
+    margin-top: -10px;
+    text-align: right;
+    width: 10%;
+    height: 40px;
+    float: right;
+    border-bottom: 1px solid gray;
+}
+ .tit{
+    text-align: center;
+    
+} 
+.tit:hover{
+    background-color: darkred;
+}
+.btn-csv{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.btn-form{
+
+    margin-left: 50px;
+    margin-top: 30px;
+}

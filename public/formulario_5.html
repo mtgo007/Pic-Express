@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./_css/w3.css">
+    <link rel="stylesheet" href="./_css/formulario_5.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <title>Fórmulario de Rios/Riacho</title>
+</head>
+<body>
+    <div class="container w3-blue select" style="width: 100%;margin-top:-10px" >
+        <h2 >Formulario Rios</h2>
+    </div>
+    <div class="cont">
+    <div class="subtit">
+        <h4 >ENCAIXAMENTO DO CANAL</h4>
+        <hr>
+    </div>
+    <div class="canalpad">
+        <h6 >Padrão do Canal</h6>
+        <select id="0">
+            <option>Canal Único</option>
+            <option>Canal anastomosado (complexo)</option>
+            <option>Canal entrelaçado</option>
+        </select>
+        <hr>
+    </div>
+    <div class="encaixa">
+        <h6 >Encaixamento Do Canal</h6>
+        <select id="selimg">
+            <option>Vale em «V» raso</option>
+            <option>Vale em «V» profundo</option>
+            <option>Garganta</option>
+            <option>Concavo/abaulado</option>
+            <option>Vale assimétrico</option>
+            <option>Vale em «U»</option>
+            <option>Vale não perceptível</option>
+        </select>
+        <br>
+        <img id="img" height="150" width="300" src="./_img/Rios/Raso.jpg" alt="Exemplo">
+        <hr>
+    </div>
+    <div>
+        <h6>Características Do Encaixamento</h6>
+        <select id="1">
+            <option>Rocha (o canal formado predominantemente pela rocha; formato de garganta)</option>
+            <option>Vale (canal encaixado em um vale estreito em formato de V)</option>
+            <option>Terraço (canal encaixado devido a sua incisão nos depósitos aluviais )</option>
+            <option>Alterações antrópicas nas margens (encaixamento em gabião, aterros, diques, estradas, etc)</option>
+            <option>Não há feições de encaixamento</option>
+        </select>
+        <hr>
+    </div>
+    <div>
+        <div>
+            <table>
+                <tr>
+                    <th>Porcentagem do comp. do canal com a margem em contato com a feição de encaixamento</th>
+                    <th><input type="number" id="2"></th>
+                    <th colspan="2" rowspan="4"><img id="ex" width="100%" height="210px" src="./_img/Rios/Exemploporcentagem.jpg"></th>
+                </tr>
+                <tr>
+                    <th>Largura do leito sazonal</th>
+                    <th><input type="number" id="3"></th>
+                </tr>
+                <tr>
+                    <th>Largura do vale (Média de estimativa visual)</th>
+                    <th><input type="number" id="4"></th>
+                </tr>
+                <tr>
+                    <th>Se você não pode ver as bordas do vale, registre a distância que você pode ver e marque a opçao ao lado.</th>
+                    <th><input type="checkbox" id="5"></th>
+                </tr>
+            </table>
+        
+        </div>
+    </div>
+    
+    </div>
+    <div class="btn">
+        <button id="btn-c" class="w3-button w3-gray"> Cancelar</button>
+        <button id="btn-p" class="w3-button w3-blue" >Próximo</button>
+    </div>
+    <script type="text/javascript" src="./_js/formulario_5.js"></script>
+</body>
+</html>

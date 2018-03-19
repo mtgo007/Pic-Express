@@ -1,0 +1,15 @@
+{
+  "name": "express-pic",
+  "version": "1.0.0",
+  "description": "pic com express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mathias Oliveira",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+  }
+}

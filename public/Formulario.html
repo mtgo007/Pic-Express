@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <title>Fórmulario de Rios/Riacho</title>
+
+        <link rel="stylesheet" href="../../public/_css/w3.css">
+        <link rel="stylesheet" href="../../public/_css/formulario.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    </head>
+    <body>
+        <!-- Digite abaixo seu codigo -->
+        
+
+<div class="container w3-blue" style="width: 100%" >
+  <h2 style="text-align: center">Formulario Rios</h2>
+</div>
+<div class=" identificacao">
+<h3 style="text-align: center">Identificação</h3>
+<div class="w3-row-padding" >
+  <div class="w3-half">
+    <label>Identificação do Ponto</label>
+    <input class="w3-input w3-border" type="text" id="i0" >
+  </div>
+  <div class="w3-half">
+    <label>Data</label>
+    <input class="w3-input w3-border" type="date" style="width: 30%" id="i1">
+  </div>
+</div>
+
+<form class="w3-container">
+  <label>Nome Local ou Referência</label>
+  <input class="w3-input w3-border" type="text" id="i2" >
+
+  <label>Equipe</label>
+  <input class="w3-input w3-border" type="text" style="width: 30%" id="i3">
+</form>
+</div>
+<h3 style="text-align: center">Coordenadas (GPS) UTM</h3>
+<div class="cgu">
+    <ul>
+        <li style="margin-left: 70px">Seção</li>
+        <li style="margin-left: 140px">Alt. (m)</li>
+        <li style="margin-left: 130px">Zona UTM</li>
+        <li style="margin-left: 70px">Coordenada Leste (X)</li>
+        <li style="margin-left: 40px">Coordenada Norte (Y)</li>
+    </ul>  
+    <ul>
+        <li><input class="w3-input w3-border" type="text" id="i4"></li>
+        <li><input class="w3-input w3-border" type="text" id="i5"></li>
+        <li><input class="w3-input w3-border" type="text" id="i6"></li>
+        <li><input class="w3-input w3-border" type="text" id="i7"></li>
+        <li><input class="w3-input w3-border" type="text" id="i8"></li>
+    </ul>  
+
+    <ul>
+        <li><input class="w3-input w3-border" type="text" id="i9"></li>
+        <li><input class="w3-input w3-border" type="text" id="i10"></li>
+        <li><input class="w3-input w3-border" type="text" id="i11"></li>
+        <li><input class="w3-input w3-border" type="text" id="i12"></li>
+        <li><input class="w3-input w3-border" type="text" id="i13"></li>
+    </ul>  
+</div>
+<h3 style="text-align: center">Determinação do Trecho do Rio/Riacho</h3>
+<div class="det">
+    <ul>
+        <li style="margin-left: 100px">Largura do canal:</li>
+        <li style="margin-left: 85px">Comprimento a jusante</li>
+        <li style="margin-left: 45px">Comprimento a montante</li>
+        <li style="margin-left: 25px">Comprimento Total do Trecho</li>
+    </ul>  
+
+    <ul>
+        <li><input class="w3-input w3-border" type="text" id="i14"></li>
+        <li><input class="w3-input w3-border" type="text" id="i15"></li>
+        <li><input class="w3-input w3-border" type="text" id="i16"></li>
+        <li><input class="w3-input w3-border" type="text" id="i17"></li>
+    </ul>  
+
+<textarea class="w3-border" name="comentário" rows="10" cols="50" placeholder="Coméntarios"  id="i18"></textarea>
+</div>
+<h3 style="text-align: center">Equipe</h3>       
+<div class="equipe">
+    <ul>
+        <li style="margin-left: 400px">Nome</li>
+        <li style="margin-left: 170px">Qualificação</li>
+    </ul>  
+
+    <ul>
+        <li><input class="w3-input w3-border" type="text"  id="i19"></li>
+        <li><select class="form-control"    id="i20">
+    <option></option>
+    <option>Biologia</option>
+    <option>Função Geomorfologica</option>
+    <option>protocolo</option>
+  </select></li>
+    </ul>  
+
+    <ul>
+        <li><input class="w3-input w3-border" type="text"  id="i21"></li>
+        <li><select class="form-control"  placeholder="Selecione uma opção"  id="i22">
+    <option></option>
+    <option>Biologia</option>
+    <option>Função Geomorfologica</option>
+    <option>protocolo</option>
+  </select></li>
+    </ul>  
+
+    <ul>
+        <li><input class="w3-input w3-border" type="text"  id="i23"></li>
+        <li><select class="form-control"  placeholder="Selecione uma opção"  id="i24">
+    <option></option>
+    <option>Biologia</option>
+    <option>Função Geomorfologica</option>
+    <option>Protocolo</option>
+  </select></li>
+    </ul>  
+
+    <ul>
+        <li><input class="w3-input w3-border" type="text"  id="i25"></li>
+        <li><select class="form-control"  placeholder="Selecione uma opção"  id="i26">
+    <option></option>
+    <option>Biologia</option>
+    <option>Função Geomorfologica</option>
+    <option>protocolo</option>
+  </select></li>
+    </ul>  
+
+    <ul>
+        <li><input class="w3-input w3-border" type="text" id="i27"></li>
+        <li><select class="form-control"  placeholder="Selecione uma opção"  id="i28">
+    <option></option>
+    <option>Biologia</option>
+    <option>Função Geomorfologica</option>
+    <option>protocolo</option>
+  </select></li>
+    </ul>  
+</div>
+<h3 style="text-align: center">Etiquetas da Coleta de Peixes</h3>
+        
+        
+<div class=" peixes" >
+  <div class="w3-half">
+    <label>Início (Seção A-B)</label>
+    <input class="w3-input w3-border" type="text" id="i29">
+  </div>
+  <div class="w3-half">
+    <label>Fim (Seção J-K)</label>
+    <input class="w3-input w3-border" type="text" style="width: 100%" id="i30">
+  </div>
+
+    <textarea class="w3-border" name="observações" rows="5" cols="100" placeholder="observações"  id="i31"></textarea>
+</div>
+        
+        
+<h3 style="text-align: center">Comentários Gerais</h3>
+        <div class="comen">
+            <textarea class="w3-border" name="observações" rows="10" cols="120" placeholder="observações" id="i32"></textarea>
+        </div>
+<div class="btn">
+    
+    <button  class="w3-button w3-gray" id="btn-c">Cancelar</button>
+    <button  class="w3-button w3-blue" id="btn-n">Próximo</button>
+    
+</div>
+
+
+<script type="text/javascript" src="../../public/_js/formulario.js"></script>
+
+    </body>
+</html>

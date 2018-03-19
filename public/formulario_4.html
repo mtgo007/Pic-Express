@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./_css/w3.css">
+    <link rel="stylesheet" href="./_css/formulario_4.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <title>Fórmulario de Rios/Riacho</title>
+</head>
+<body>
+    <div class="container w3-blue select" style="width: 100%;margin-top:-10px" >
+        <h2 style="text-align: center">Formulario Rios</h2>
+     </div>
+    <div class="cont">
+     <div>
+         <select class="w3-input w3-hover-blue w3-border" style="width:60px;margin:5px auto" id="nDisp">
+             <option >1</option>
+             <option >2</option>
+             <option >3</option>
+         </select>
+     </div>
+     <div id="content" style="width:100%; margin:0 auto">
+         <div class="esq">
+                <table >
+                        <tr>
+                            <th>TRANSECTO</th>
+                            <th>Decliv. ou Elev. Diferencial</th>
+                            <th>Ângulo</th>
+                            <th>Proporção (%)</th>
+                        </tr>
+                        <tr>
+                            <th>A < B</th>
+                            <th>
+                                <input id="0" type="number">
+                                <select id="1">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="20" type="number">
+                            </th>
+                            <th>
+                                <input id="30" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>B < C</th>
+                            <th>
+                                <input id="2" type="number">
+                                <select id="3">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="21" type="number">
+                            </th>
+                            <th>
+                                <input id="31" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>C < D</th>
+                            <th>
+                                <input id="4" type="number">
+                                <select id="5">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="22" type="number">
+                            </th>
+                            <th>
+                                <input id="32" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>D < E</th>
+                            <th>
+                                <input id="6" type="number">
+                                <select id="7">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="23" type="number">
+                            </th>
+                            <th>
+                                <input id="33" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>E < F</th>
+                            <th>
+                                <input id="8" type="number">
+                                <select id="9">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="24" type="number">
+                            </th>
+                            <th>
+                                <input id="34" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>F < G</th>
+                            <th>
+                                <input id="10" type="number">
+                                <select id="11">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="25" type="number">
+                            </th>
+                            <th>
+                                <input id="35" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>G < H</th>
+                            <th>
+                                <input id="12" type="number">
+                                <select id="13">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="26" type="number">
+                            </th>
+                            <th>
+                                <input id="36" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>H < I</th>
+                            <th>
+                                <input id="14" type="number">
+                                <select id="15">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="27" type="number">
+                            </th>
+                            <th>
+                                <input id="37" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>I < J</th>
+                            <th>
+                                <input id="16" type="number">
+                                <select id="17">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="28" type="number">
+                            </th>
+                            <th>
+                                <input id="38" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>J < K</th>
+                            <th>
+                                <input id="18" type="number">
+                                <select id="19">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="29" type="number">
+                            </th>
+                            <th>
+                                <input id="39" type="number">
+                            </th>
+                        </tr>
+                     </table>
+         </div>
+        <div  class="cen" id="tb2">
+                <table>
+                        <tr>
+                            <th>Decliv. ou Elev. Diferencial</th>
+                            <th>Ângulo</th>
+                            <th>Proporção (%)</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input id="s0" type="number">
+                                <select id="s1">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="s20" type="number">
+                            </th>
+                            <th>
+                                <input id="s30" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input id="s2" type="number">
+                                <select id="s3">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="s21" type="number">
+                            </th>
+                            <th>
+                                <input id="s31" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input id="s4" type="number">
+                                <select id="s5">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="s22" type="number">
+                            </th>
+                            <th>
+                                <input id="s32" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input id="s6" type="number">
+                                <select id="s7">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="s23" type="number">
+                            </th>
+                            <th>
+                                <input id="s33" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input id="s8" type="number">
+                                <select id="s9">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="s24" type="number">
+                            </th>
+                            <th>
+                                <input id="s34" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input id="s10" type="number">
+                                <select id="s11">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="s25" type="number">
+                            </th>
+                            <th>
+                                <input id="s35" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input id="s12" type="number">
+                                <select id="s13">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="s26" type="number">
+                            </th>
+                            <th>
+                                <input id="s36" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input id="s14" type="number">
+                                <select id="s15">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="s27" type="number">
+                            </th>
+                            <th>
+                                <input id="s37" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input id="s16" type="number">
+                                <select id="s17">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="s28" type="number">
+                            </th>
+                            <th>
+                                <input id="s38" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input id="s18" type="number">
+                                <select id="s19">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="s29" type="number">
+                            </th>
+                            <th>
+                                <input id="s39" type="number">
+                            </th>
+                        </tr>
+                     </table>
+        </div>
+         <div  class="dir" id="tb3">
+                <table>
+                        <tr>
+                            <th>Decliv. ou Elev. Diferencial</th>
+                            <th>Ângulo</th>
+                            <th>Proporção (%)</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input id="t0" type="number">
+                                <select id="t1">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="t20" type="number">
+                            </th>
+                            <th>
+                                <input id="t30" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input id="t2" type="number">
+                                <select id="t3">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="t21" type="number">
+                            </th>
+                            <th>
+                                <input id="t31" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input id="t4" type="number">
+                                <select id="t5">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="t22" type="number">
+                            </th>
+                            <th>
+                                <input id="t32" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input id="t6" type="number">
+                                <select id="t7">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="t23" type="number">
+                            </th>
+                            <th>
+                                <input id="t33" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input id="t8" type="number">
+                                <select id="t9">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="t24" type="number">
+                            </th>
+                            <th>
+                                <input id="t34" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input id="t10" type="number">
+                                <select id="t11">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="t25" type="number">
+                            </th>
+                            <th>
+                                <input id="t35" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input id="t12" type="number">
+                                <select id="t13">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="t26" type="number">
+                            </th>
+                            <th>
+                                <input id="t36" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input id="t14" type="number">
+                                <select id="t15">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="t27" type="number">
+                            </th>
+                            <th>
+                                <input id="t37" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input id="t16" type="number">
+                                <select id="t17">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="t28" type="number">
+                            </th>
+                            <th>
+                                <input id="t38" type="number">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input id="t18" type="number">
+                                <select id="t19">
+                                    <option>cm</option>
+                                    <option>%</option>
+                                </select>
+                            </th>
+                            <th>
+                                <input id="t29" type="number">
+                            </th>
+                            <th>
+                                <input id="t39" type="number">
+                            </th>
+                        </tr>
+                     </table>
+         </div>
+         </div>
+     
+     <textarea id="obs" placeholder="Comentarios" rows="4" cols="50"></textarea>
+     <div style="width:100%">
+         <button id="btnc" class="w3-button w3-gray">Cancela</button>
+         <button id="btnp" class="w3-button w3-blue">Próximo</button>
+     </div>
+    </div>
+     <script type="text/javascript" src="./_js/formulario_4.js"></script>
+</body>
+</html>

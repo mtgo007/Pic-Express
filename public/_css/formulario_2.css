@@ -1,0 +1,64 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    margin-top:-10px;
+    -webkit-app-region: drag;
+    height: 3.5em;
+}
+table{
+    border-collapse: collapse;
+}
+table, th{
+    border: 1px solid black;
+}
+.titulo .state{
+    margin-left: 80%;
+}
+.titulo .tit{
+    margin:10px;
+    margin-left: 20px;
+}
+.container{
+   width: 1000px;
+   margin: 0 auto;
+}
+.container h4{
+    text-align: center;
+}
+.info input{
+    width: 100px;
+}
+.info table{
+    width: 100%;
+    
+}
+.algas table{
+    width: 1000px;
+    margin: 0 auto;
+}
+.algas input{
+    width:100px;
+}
+.estzn{
+    
+}
+.med table{
+    width:1000px;
+}
+.cobDoss table{
+    width: 1000px;
+}
+.Vzn table{
+    width: 1000px;
+}
+.btn{
+    width: 1000px;
+    margin: 0 auto 10px;
+}
+#btn-c{
+    margin: 5px 0;
+}
+#btn-p{
+    margin: 5px 0 5px 81%;
+}

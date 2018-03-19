@@ -1,0 +1,93 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+label{
+    padding: 5px;
+}
+ul{
+    padding: 0px;
+}
+li{
+    display: inline-block;
+    margin: 5px;
+}
+
+.container{
+    margin-top:-10px;
+    -webkit-app-region: drag;
+    height: 3.5em;
+}
+.cgu{
+    width: 1000px;
+    margin: 0 auto;
+}
+.cgu input{
+    width: 186px;
+}
+.cgu li{
+    margin: 0px;
+}
+.identificacao{
+    width:1000px;
+    margin: 0 auto;
+}
+.det{
+    width: 1000px;
+    margin: 0 auto;
+}
+.det input{
+    width: 220px;
+    margin: 0px;
+}
+.det li{
+    margin: 0px;
+}
+#i14{
+    margin-left: 60px
+}
+#i18{
+    width: 500px;
+    margin: 0 250px !important;
+}
+.equipe{
+    width: 1000px;
+    margin: 0 auto;
+}
+.equipe input{
+    width: 250px;
+    margin-left: 250px;
+}
+
+.equipe select{
+    width: 250px;
+}
+.peixes{
+    width:1000px;
+    margin: 0 auto !important;
+}
+.peixes input{
+    margin:3px;
+    width: 98%;
+}
+
+.peixes textarea{
+    width: 400px;
+    margin: 5px 300px;
+}
+.comen{
+    width: 1000px;
+    margin: 0 auto;
+}
+.comen textarea{
+    width: 100%;
+}
+.btn{
+    width:1000px;
+    margin: 5px auto 20px;
+}
+#btn-c{
+    
+}
+#btn-n{
+    margin-left: 812px
+}    
