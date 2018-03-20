@@ -74,37 +74,20 @@ btnp.addEventListener('click', ()=>{
         data3["angulo"] = geraArr(20, 29, "t");
         data3["proporcao"] = geraArr(29, 39, "t");
     }
+    //add ao objeto do rio
     obs = document.getElementById("obs").value;
 
-    // main.openWindow('formulario_5', 1400, 900);
-    // // salvaDados(title, dados);
-    // fechaJanela();
+    axios.post('/add/f4', data)
+        .then(function (response) {
+          console.log(response);
+          this.document.location.href = response.data;
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
 })
 
-// function fechaJanela(){
-//     var win = remote.getCurrentWindow();
-//     win.close();
-// }
 
-// function getData(cod,obj){
-//     for(let i =0;i<40;i++){
-//         obj[i] = document.getElementById(cod+i).value;
-//     }
-//     return obj;
-// }
-
-// ipcRenderer.send('get-title', '*');
-// ipcRenderer.once('title-reply', function(event, arg){
-//     title = arg;
-// });
-
-// function salvaDados(titulo, obj){
-//     db.insertTableContent(titulo, obj, (succ, msg) => {
-//         // succ - boolean, tells if the call is successful
-//         console.log("Success: " + succ);
-//         console.log("Message: " + msg);
-//     })
-// }
 function geraArr(ini, end, cod){
     var arr = [];
     var count = 0;

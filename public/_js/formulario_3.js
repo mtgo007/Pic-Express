@@ -85,7 +85,7 @@ btnp.addEventListener('click', function(){
         // main.openWindow('formulario_4', 1400, 900);
         // fechaJanela();
     }
-    else if(count<10){
+    else if(count<9){
         //get dados
         data['dadosTransecto']['profTalvegue']  = data['dadosTransecto']['profTalvegue'].concat(geraArr(0,14));
         data['dadosTransecto']['largMolhada'] = data['dadosTransecto']['largMolhada'].concat(geraArr(15,16));
@@ -119,9 +119,14 @@ btnp.addEventListener('click', function(){
         count++;
         alteraEstado(count);
     }else{
-        // salvaDados(title, dados);
-        // main.openWindow('formulario_4', 1400, 900);
-        // fechaJanela();
+        axios.post('/add/f3', data)
+        .then(function (response) {
+          console.log(response);
+          this.document.location.href = response.data;
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
     }
 
 });

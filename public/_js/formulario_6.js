@@ -24,6 +24,14 @@ btn.addEventListener('click', ()=>{
     data['AvaliacaoGeral'] = document.getElementById('41').value;
 
     console.log(data);
+
+    axios.post('/add/f6', data)
+        .then(function (response) {
+          console.log(response);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
 });
 
 function geraArr(ini, end){

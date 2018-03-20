@@ -17,6 +17,15 @@ proximo.addEventListener('click', () =>{
     }
     console.log(elementos);
 
+    axios.post('/add/f1', elementos)
+      .then(function (response) {
+        console.log(response);
+        this.document.location.href = response.data;
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+
     // criaTabela(title);
     // salvaDados(title, elementos);    
 

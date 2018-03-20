@@ -6,25 +6,25 @@ let data = {};
 selImg.addEventListener('change', ()=>{
     let val = selImg.value;
     if(val == "Vale em «V» raso"){
-        img.src = "./_img/Rios/Raso.jpg";
+        img.src = "../../public/_img/Rios/Raso.jpg";
     }
     if(val == "Vale em «V» profundo"){
-        img.src = "./_img/Rios/Profundo.jpg";
+        img.src = "../../public/_img/Rios/Profundo.jpg";
     }
     if(val == "Garganta"){
-        img.src = "./_img/Rios/Garganta.jpg";
+        img.src = "../../public/_img/Rios/Garganta.jpg";
     }
     if(val == "Concavo/abaulado"){
-        img.src = "./_img/Rios/Concavo.jpg";
+        img.src = "../../public/_img/Rios/Concavo.jpg";
     }
     if(val == "Vale assimétrico"){
-        img.src = "./_img/Rios/Assimetrico.jpg";
+        img.src = "../../public/_img/Rios/Assimetrico.jpg";
     }
     if(val == "Vale em «U»"){
-        img.src = "./_img/Rios/U.jpg";
+        img.src = "../../public/_img/Rios/U.jpg";
     }
     if(val == "Vale não perceptível"){
-        img.src = "./_img/Rios/NaoPerceptivel.jpg";
+        img.src = "../../public/_img/Rios/NaoPerceptivel.jpg";
     }
 });
 
@@ -37,4 +37,13 @@ btn.addEventListener('click', ()=>{
     data['largVale'] = document.getElementById(4).value;
     data['bordasVale'] = document.getElementById(5).checked;
     console.log(data);
+
+    axios.post('/add/f5', data)
+        .then(function (response) {
+          console.log(response);
+          this.document.location.href = response.data;
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
 });

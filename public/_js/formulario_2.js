@@ -1,11 +1,3 @@
-// // const remote = require('electron').remote
-// // const electron = require('electron')
-// // const ipcRenderer = electron.ipcRenderer;
-// // const main = remote.require('./main.js')
-// // const db = require('electron-db');
-
-
-// // var title;
 
 function setEstado(value){
     nform.innerHTML = estado[value];
@@ -67,7 +59,7 @@ var btn = document.getElementById("btn-p");
 // // var btc = document.getElementById("btn-c");
 
 btn.addEventListener('click', ()=>{
-    if(count<=10){
+    if(count<9){
       //INFORMAÇÕES DO SUBSTRATO DA SEÇÃO TRANSVERSAL
       data['infoDoSub']['distMEsq'] = data['infoDoSub']['distMEsq'].concat(geraArr(0,4));
       data['infoDoSub']['prof'] = data['infoDoSub']['prof'].concat(geraArr(5,9));
@@ -104,18 +96,21 @@ btn.addEventListener('click', ()=>{
       data['influenciaHumana']['obs'] = data['influenciaHumana']['obs'].concat(geraArr(120,130));
 
         //altera estado
-        count++;
-        setEstado(count);
+      count++;
+      setEstado(count);
+      
 
-//         // main.openWindow('formulario_3', 1400, 900);
-//         // var win = remote.getCurrentWindow();
-//         // win.close();
     }else{
-//     //     // salvaDados(title, dados);
-//     //     // main.openWindow('formulario_3', 1400, 900);
-//     //     // var win = remote.getCurrentWindow();
-//     //     // win.close();
+      axios.post('/add/f2', data)
+      .then(function (response) {
+        console.log(response);
+        this.document.location.href = response.data;
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
     }
+    
 })
 
 // // btc.addEventListener('click', ()=>{
@@ -124,10 +119,7 @@ btn.addEventListener('click', ()=>{
 // // })
 
 
-// // ipcRenderer.send('get-title', '*');
-// // ipcRenderer.once('title-reply', function(event, arg){
-// //     title = arg;
-// // });
+
 
 
 
