@@ -6,6 +6,7 @@ var mongojs = require('mongojs')
 var db = mongojs('pic', ['rios'])
 
 var data ={}
+var metricas
 
 app.use('/public', express.static(path.join(__dirname + '/public')));
 // parse application/x-www-form-urlencoded
@@ -85,7 +86,7 @@ app.get("/add/f6",function(req, res){
 app.post("/add/f6",function(req, res){
     console.log(req.body);
     data['f6'] = req.body;
-    // db.rios.insert(data);
+    db.rios.insert(data);
     res.send('/metricas');
 })
 
@@ -100,7 +101,7 @@ app.get("/metricas/data",function(req, res){
 
 app.post("/metricas",function(req, res){
     console.log(req.body);
-    let metricas = req.body;
+    metricas = req.body;
     data = {};
     console.log(metricas);
     res.send('/');
