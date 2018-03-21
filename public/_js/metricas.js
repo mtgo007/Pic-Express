@@ -2,8 +2,21 @@ let arr = [1,2,3,4,5,6,7,8];
 
 let resultado = mediana(arr);
 
-alert(resultado);
+//requisição de dados
+let data;
 
+axios.get('/metricas/data')
+  .then(function (response) {
+    data = response.data;
+    console.log(data);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+
+
+
+//Funçoes Algebricas
 function mediana(arr){
     let newArr = ordenar(arr);
     if(newArr.length%2==0){

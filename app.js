@@ -85,8 +85,24 @@ app.get("/add/f6",function(req, res){
 app.post("/add/f6",function(req, res){
     console.log(req.body);
     data['f6'] = req.body;
-    db.rios.insert(data);
+    // db.rios.insert(data);
+    res.send('/metricas');
+})
+
+app.get("/metricas",function(req, res){
+    console.log(metricas);
+    res.sendFile(path.join(__dirname, '/public/metricas.html'));
+})
+
+app.get("/metricas/data",function(req, res){
+    res.send(data);
+})
+
+app.post("/metricas",function(req, res){
+    console.log(req.body);
+    let metricas = req.body;
     data = {};
+    console.log(metricas);
     res.send('/');
 })
 
