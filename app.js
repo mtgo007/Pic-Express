@@ -2,6 +2,11 @@ var express = require('express')
 var bodyParser = require('body-parser')
 var path = require('path');
 var app = express()
+var mongojs = require('mongojs')
+var db = mongojs('pic', ['rios'])
+
+var data ={}
+
 app.use('/public', express.static(path.join(__dirname + '/public')));
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -24,6 +29,7 @@ app.get("/add/f1",function(req, res){
 
 app.post("/add/f1",function(req, res){
     console.log(req.body);
+    data['f1'] = req.body;
     res.send('/add/f2');
 })
 
@@ -34,6 +40,7 @@ app.get("/add/f2",function(req, res){
 
 app.post("/add/f2",function(req, res){
     console.log(req.body);
+    data['f2'] = req.body;
     res.send('/add/f3');
 })
 
@@ -44,6 +51,7 @@ app.get("/add/f3",function(req, res){
 
 app.post("/add/f3",function(req, res){
     console.log(req.body);
+    data['f3'] = req.body;
     res.send('/add/f4');
 })
 
@@ -54,6 +62,7 @@ app.get("/add/f4",function(req, res){
 
 app.post("/add/f4",function(req, res){
     console.log(req.body);
+    data['f4'] = req.body;
     res.send('/add/f5');
 })
 
@@ -64,6 +73,7 @@ app.get("/add/f5",function(req, res){
 
 app.post("/add/f5",function(req, res){
     console.log(req.body);
+    data['f5'] = req.body;
     res.send('/add/f6');
 })
 
@@ -74,7 +84,10 @@ app.get("/add/f6",function(req, res){
 
 app.post("/add/f6",function(req, res){
     console.log(req.body);
-    res.send('/add/f6');
+    data['f6'] = req.body;
+    db.rios.insert(data);
+    data = {};
+    res.send('/');
 })
 
 app.listen(3000, function () {

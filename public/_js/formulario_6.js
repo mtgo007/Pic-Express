@@ -28,6 +28,7 @@ btn.addEventListener('click', ()=>{
     axios.post('/add/f6', data)
         .then(function (response) {
           console.log(response);
+          this.document.location.href = response.data;
         })
         .catch(function (error) {
           console.log(error);
