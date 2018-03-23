@@ -6,7 +6,6 @@ var mongojs = require('mongojs')
 var db = mongojs('pic', ['rios'])
 
 var data ={}
-var metricas
 
 app.use('/public', express.static(path.join(__dirname + '/public')));
 // parse application/x-www-form-urlencoded
@@ -91,12 +90,15 @@ app.post("/add/f6",function(req, res){
 })
 
 app.get("/metricas",function(req, res){
-    console.log(metricas);
     res.sendFile(path.join(__dirname, '/public/metricas.html'));
 })
 
 app.get("/metricas/data",function(req, res){
-    res.send(data);
+    db.rios.find(function (err, docs) {
+        // docs is an array of all the documents in mycollection
+        res.send(docs[0]);
+    })
+    
 })
 
 app.post("/metricas",function(req, res){
